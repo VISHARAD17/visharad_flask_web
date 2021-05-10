@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <div class="headline">
+      <h1 class="text-center headline-intro">VISHARAD BORSUTKAR</h1>
+  </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8 p-5">
+          <p class="intro-para">
+            Hello all! &#x1F44b; My name is <strong>Visharad Borsutkar</strong>. Currently, I am a third year undergraduate student at <strong>IIT Madras</strong> &#x1F3Eb;, pursuing 
+            <strong>Dual Degree</strong> in <strong>Naval Architure and Ocean Engineering</strong>. Expected graduation month is June 2023. I am interested in 
+            Data Science, Machine Learning and High Performance computing applications. I have proficient in Data Structures and Algorithms.
+          </p>
+          <p class="intro-para mt-2">
+            At present, I am doing internship at 
+            <img src="{{url_for('static', filename = 'img/nvidia_icon.jpeg')}}" alt="" class="para-icon"> <strong>Nvidia</strong>. More details about interships can be found <a href="">here</a>.
+          </p>
+          <p class="intro-para mt-2">
+            I can comfortably code in <strong> C/C++, Python, JavaScript</strong> & <strong>FORTRAN</strong>.
+          </p>
+          <p class="intro-para mt-2">
+            Check out my <strong>Github account</strong> <img src="{{url_for('static', filename = 'img/github_icon.png')}}" alt="" class="para-icon"> <a href="#">here</a>.
+          </p>
+          <p class="intro-para mt-2">
+            Hello all! &#x1F44b; My name is <strong>Visharad Borsutkar</strong>. Currently, I am a third year undergraduate student at IIT Madras, pursuing 
+            Dual Degree in Naval Architure and Ocean Engineering. something something something
+            something something something
+          </p> 
+        </div>
+        <div class="col-lg d-flex justify-content-center">
+          <img class="intro-img" src="{{url_for('static', filename = 'img/profile_img.jpg')}}" alt="">
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div>
+    {% include 'projects.html' %}
+  </div>
+{% endblock%}

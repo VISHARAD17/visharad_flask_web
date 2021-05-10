@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.navbardiv-class nav {
+    background: #ffffff;
+    box-shadow:  5px 5px 9px #a6a6a6,
+             -5px -5px 9px #ffffff;
+    position: fixed;
+}
+
+:root {
+    --font-text :'Ubuntu', sans-serif;
+}
+
+footer {
+    margin: 0;
+}
+
+
+body {
+    padding-top: 150px;
+  }
+@media (max-width: 979px) {
+    body {
+      padding-top: 120px;
+    }
+  }
+
+.navbar-items {
+    font-family: var(--font-text);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-items {
+    font-family: var(--font-text);
+    color: black;
+    font-size: 23px;
+}
+
+.nav-bar-items a {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.headline {
+    font-family: var(--font-text);
+}
+
+.headline-intro {
+    letter-spacing: 2.5px;
+}
+
+.logo {
+    border: 2.5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.intro-img {
+    width: 300px;
+    height: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro-para {
+    font-family: var(--font-text);
+    font-size: 17px;
+}
+
+.para-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-note {
+    bottom: 0;
+    position:static;
+    margin-left: auto;
+    font-family: var(--font-text);
+}
+
+.para-icon-h {
+    width: 100px;
+    height: 25px;
+}
