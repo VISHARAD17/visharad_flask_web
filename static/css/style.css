@@ -83,3 +83,8 @@ body {
     width: 100px;
     height: 25px;
 }
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
