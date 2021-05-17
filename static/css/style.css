@@ -4,9 +4,9 @@ html {
     scroll-behavior: smooth;
 }
 .navbardiv-class nav {
-    background: #ffffff;
-    box-shadow:  5px 5px 9px #a6a6a6,
-             -5px -5px 9px #ffffff;
+    background: #333;
+    /*box-shadow:  5px 5px 9px #1a1919,
+             -5px -5px 9px #333; */
     position: fixed;
 }
 
@@ -33,19 +33,46 @@ body {
     font-family: var(--font-text);
     font-weight: bold;
     letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 15px;
 }
 
 .nav-items {
     font-family: var(--font-text);
     color: black;
-    font-size: 23px;
 }
 
+
+
 .nav-bar-items a {
-    color: black;
+    color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: var(--font-text);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
+
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-item:hover {
+    color: rgb(20, 212, 46);
+    background-color: black;
+    border-radius: 7px;
+    transition-duration: 0.7s;
+}
+
+.navbar-items:hover {
+    color: rgb(20, 212, 46);
+    border-radius: 7px;
+}
+
 
 .headline {
     font-family: var(--font);
@@ -57,7 +84,7 @@ body {
 }
 
 .logo {
-    border: 2.5px solid rgb(0, 0, 0);
+    border: 2.5px solid white;
     border-radius: 10px;
 }
 
@@ -95,3 +122,4 @@ body {
     display: inline-block;
     margin-left: 40px;
 }
+
