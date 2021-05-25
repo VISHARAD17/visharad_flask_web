@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Ubuntu+Mono&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
-.navbardiv-class nav {
+.navbar-class {
     background: #333;
     position: fixed;
 }
@@ -13,32 +14,18 @@ html {
     --font :'Quicksand', sans-serif;
 }
 
-footer {
-    margin: 0;
-}
-
-
-body {
-    padding-top: 150px;
-  }
-@media (max-width: 979px) {
-    body {
-      padding-top: 120px;
-    }
-  }
-
 .navbar-items {
-    font-family: var(--font-text);
+    font-family: var(--font);
     font-weight: bold;
     letter-spacing: 2px;
     color: white;
     text-decoration: none;
     margin-right: 50px;
-    padding: 15px;
+    padding: 17px;
 }
 
 .nav-items {
-    font-family: var(--font-text);
+    font-family: var(--font);
     color: black;
 }
 
@@ -46,37 +33,31 @@ body {
     color: white;
     text-align: center;
     font-size: 17px;
-    font-family: var(--font-text);
+    font-family: var(--font);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 2px;
 }
-
-
 .nav-item {
     padding: 15px;
+    font-family: var(--font);
 }
 
 .nav-item:hover {
     color: rgb(20, 212, 46);
     background-color: black;
     border-radius: 7px;
+    transition: 0.2s ease-in;
+}
+.active {
+    color: rgb(20, 212, 46);
+    background-color: black;
+    border-radius: 7px;
     transition-duration: 0.7s;
 }
-
 .navbar-items:hover {
     color: rgb(20, 212, 46);
     border-radius: 7px;
-}
-
-
-.headline {
-    font-family: var(--font);
-}
-
-.headline-intro {
-    letter-spacing: 3px;
-    font-weight: bolder;
 }
 
 .logo {
@@ -84,41 +65,94 @@ body {
     border-radius: 10px;
 }
 
-.intro-img {
-    width: 300px;
-    height: 300px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.intro-para {
-    font-family: var(--font-text);
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-.para-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.footer-note {
-    bottom: 0;
-    position:static;
-    margin-left: auto;
-    font-family: var(--font-text);
-}
-
-.para-icon-h {
-    width: 100px;
-    height: 25px;
-}
-
 .tab {
     display: inline-block;
     margin-left: 40px;
 }
 
-.toggler-class {
-    border: 2.5px solid white;
+/* paralax img styling */
+
+.intro-paralax{
+    background: url("/static/img/Plants.jpg");
+    width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+@media only screen and (max-width: 956px) {
+    .intro-paralax {
+        background: black;
+        width: 100%;
+        min-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+
+.head-name{
+    color: rgb(112, 111, 111);
+    transform: translateY(350px);
+    font-family: var(--font);
+    font-weight: bolder;
+}
+
+.intro-typing{
+    display: inline-flex;
+    margin-left: 35%;
+    color: rgb(20, 212, 46);
+    background:none;
+    transform: translateY(350px);
+}
+
+.static-txt {
+    color: white;
+    font-family: var(--font-text);
+}
+
+.typing {
+    margin-left: 10px;
+    font-family: var(--font);
+    border-bottom: 4px solid rgb(20, 212, 46);
+    
+}
+
+.typing::after{
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -5px;
+    border-right: 2.5px solid black;
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+
+/*.intro {
+    display: flex;
+    color: white;
+    height: 100%;
+}
+
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+
+*/
+
