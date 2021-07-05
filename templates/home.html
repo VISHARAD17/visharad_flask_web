@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
+
 <div class="intro-paralax container-fluid">
   <div class="display-1 head-name text-center">VISHARAD</div>
   <div class="container pt-3">
@@ -11,28 +12,93 @@
   </div>
 </div>
 
-<div class="bg-info">
-  <ul>
-    <li> this is about section</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-    <li>Visharad</li>
-  </ul>
+<div class="about-class pb-5 pt-5" id="about-id">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="sub-heading h1 text-center mt-5">About Me</div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8 p-5 about-para">
+        <p><strong>Hello all! &#x1F44b;</strong> <br>My name is <strong>Visharad Borsutkar</strong>.
+          I am from <strong>Ratnagiri, Maharashtra, India</strong>.
+          At present, I am a fourth year
+          undergraduate student at <strong>IIT Madras</strong>, pursuing
+          <strong>Dual Degree</strong> in <strong>Naval Architure and Ocean Engineering</strong>. Expected graduation
+          month is June 2023. <br> My interests includes
+          <strong>Data Science</strong> , <strong>Machine Learning</strong> and <strong>High Performance computing</strong> applications. Currently I am L
+          learning
+          <strong>Data Structures and Algorithms</strong> and practicing <strong>Competitive Programming</strong>.
+        </p>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center about-img">
+        <img src="{{url_for('static', filename = 'img/Plants.jpg')}}" alt="">
+      </div>
+      <div class="row pb-5 pt-3">
+        <div class="col-md">
+          <ul class="about-ul">
+            <li class="about-list arrow"><strong>Age : </strong>21</li>
+            <li class="about-list arrow"><strong>Mobile no. : </strong>7507848642</li>
+            <li class="about-list arrow"><strong>City : </strong>Ratnagiri, India</li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <ul class="about-ul">
+            <li class="about-list arrow"><strong>Email : </strong>visharadborsutkar777@gmail.com</li>
+            <li class="about-list arrow"><strong>Degree : </strong>Dual Degree</li>
+            <li class="about-list arrow"><strong>some_point : </strong>345454</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills-class pb-5 pt-5" id="skills-id">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="sub-heading h1 text-center mt-5"> Tech Stack</div>
+    </div>
+    <div class="row mt-2 d-flex justify-content-center">
+      <div class="col-md p-2">
+        {% for i in range(0, 5)%}
+        <div class="skills">
+          <div class="skill-name">{{skills[i]}}</div>
+          <div id="bar"><div id="{{styles[i]}}"></div></div>
+        </div>
+        {% endfor%}
+      </div>
+      <div class="col-md p-2">
+        {% for i in range(5, length)%}
+        <div class="skills">
+          <div class="skill-name">{{skills[i]}}</div>
+          <div id="bar"><div id="{{styles[i]}}"></div></div>
+        </div>
+        {% endfor%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-class pb-5 pt-5" id="project-id">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="sub-heading h1 text-center mt-5">Education</div>
+    </div>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2017</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+            fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2016</h2>
+          <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+            fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+      </div>
+  </div>
 </div>
 {% endblock %}
